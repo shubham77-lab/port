@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Go way</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+    <section class="container">
+        <header>Book Your Trip</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <lable>Full Name</lable>
+                <input type="text" placeholder="Enter name" required>
+            </div>
+
+            <div class="input-box">
+                <lable>Email Address</lable>
+                <input type="email" placeholder="Enter Email Address" required>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <lable>Phone Number</lable>
+                    <input type="number" placeholder="Enter Phone Number" required>
+                </div>
+
+                <div class="input-box">
+                    <lable>Birth Date</lable>
+                    <input type="date" placeholder="Enter Birth date" required>
+                </div>
+            </div>
+
+            <!--div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked>
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender">
+                        <label for="check-female">female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender">
+                        <label for="check-other">Other</label>
+                    </div>
+                </div>
+            </div-->
+
+            <div class="input-box address">
+                <lable>Address</lable>
+                <input type="text" placeholder="street address" required>
+                <input type="text" placeholder="street line 2" required>
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Country</option>
+                            <option>America</option>
+                            <option>India</option>
+                            <option>Nepal</option>
+                            <option>Russia</option>
+                            <option>Japan</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="City" required>
+                </div>
+ 
+                <div class="column">
+                    <input type="text" placeholder="State" required>
+                    <input type="number" placeholder="Postal code" required>
+                </div>
+            </div>
+
+            <button>Submit</button>
+        </form>
+    </section>
+
+
+</body>
+</html>

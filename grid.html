@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        /* font url */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'bodoni moda', serif;
+    font-size: 1.2ren;
+}
+    /* main body */
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background-color: #617c81;
+}
+    /* left box */
+.left-text{
+    flex-basis: 30%;
+    padding: 10px;
+    border: 5px solid rgb(6, 38, 80);
+    border-radius: 30px;
+}
+
+.heading{
+    font-size: 3ren;
+    color: #fff;
+    text-align: center;
+}
+
+.subheading{
+    color: aliceblue;
+    margin-top: 10px;
+    text-align: center;
+}
+    /* right box */
+.gallery{
+    flex-basis: 50%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+}
+    /* gallery all box  */
+.box{
+    background-size: cover;
+    background-position: top;
+    border-radius: 20px;
+    color: #e2e8ebe7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+}
+    /* hover efect on boxes */
+.box:hover{
+    background-color: #999;
+    background-position: center;
+    box-shadow: 0 0 4px #fff;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+    /* media qoeries for responsiv site */
+@media screen and (max-width: 1024px) {
+    .container{
+        flex-direction: column;
+        padding-block: 20px;
+    }
+    .gallery{
+        width: 100%;
+        padding-inline: 12px;
+        grid-row: 220px;
+    }
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+}
+
+
+
+
+</style>
+
+</head>
+
+    <!-- html body-->
+<body>
+    <div class="container">
+    <!-- this a sort massege from left said-->
+        <div class="left-text">
+            <h1 class="heading">Trip & Joy</h1>
+            <p class="subheading">the emotion evoked by well-being, success, or good fortune or by the prospect of possessing what one desires : </p>
+        </div>
+    <!-- this is gallery box from right said-->
+        <div class="gallery">
+            <div class="box row-2" id="box-1" style="background-image: url(https://images.unsplash.com/photo-1744024865056-a2623d1dd495?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Beach</div>
+            <div class="box col-2"  style="background-image: url(https://plus.unsplash.com/premium_photo-1712685296167-40032b5bcea3?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8RnpvM3p1T0hONnd8fGVufDB8fHx8fA%3D%3D);">Sunset</div>
+            <div class="box" style="background-image: url(https://images.unsplash.com/photo-1740688053492-9d24f32dc53c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0MnxGem8zenVPSE42d3x8ZW58MHx8fHx8);">Mountains</div>
+            <div class="box row-2" style="background-image: url(https://plus.unsplash.com/premium_photo-1728312031312-9304d4d44a97?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0MXxGem8zenVPSE42d3x8ZW58MHx8fHx8);">Jungle</div>
+            <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1740149263431-098cc6705df4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2NHxGem8zenVPSE42d3x8ZW58MHx8fHx8);">Lake</div>
+            <div class="box" style="background-image: url(https://images.unsplash.com/photo-1735238075869-365228c7cb68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDV8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D);">Hills</div>
+            <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1720734020504-8b5557750735?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Water fall </div>
+        </div>
+    </div>
+    
+</body>
+</html>
